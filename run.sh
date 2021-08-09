@@ -16,3 +16,6 @@ mclient -d mdb2 -u monetdb -p 60002 w2.sql
 
 # setup "leader" node pointing to "follower" nodes
 mclient -d mdb3 -u monetdb -p 60003 w3.sql
+
+# run query
+mclient -d mdb3 -u monetdb -p 60003 query.sql
